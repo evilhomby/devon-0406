@@ -2,7 +2,7 @@
 * 覆蓋 Bootstrap 預設樣式
 ************************************************************/
 :root {
-	--primary: #c60013;
+	--primary: #0270df;
 }
 .bg-primary {
 	background-color: var(--primary) !important;
@@ -11,14 +11,14 @@
 	color: var(--primary) !important;
 }
 .btn-danger {
-	background: #c50013;
+	background: var(--primary);
 }
 .btn-danger:hover {
-	background: #dc3545;
+	background: #0257ac;
 }
 .badge-danger {
 	font-size: 1rem;
-	background: #c50013;
+	background: var(--primary);
 }
 .border {
 	border-width: 2px !important;
@@ -36,14 +36,23 @@ body {
 	font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
+h2 {
+	font-size: 3.125rem;
+	font-weight: 900;
+}
 h3 {
 	font-family: "Noto Sans Japanese";
 	font-weight: 900;
-	font-size: 2.25rem;
+	font-size: 2.5rem;
 	margin: 0;
 }
 h4 {
 	font-weight: 900;
+	font-size: 2rem;
+}
+h5 {
+	font-weight: 900;
+	font-size: 1.5rem;
 }
 p {
 	font-weight: normal;
@@ -52,12 +61,14 @@ p {
 p:last-child {
 	margin-bottom: 0;
 }
-
 a {
-    color: #999;
-    text-decoration: underline;
-	}
-	
+	color: #f9fafa;
+	text-decoration: none;
+}
+a:hover {
+	color: #fff;
+	text-decoration: none;
+}
 ul {
 	list-style: none;
 }
@@ -68,12 +79,18 @@ li {
 li:first-child {
 	margin-top: 0;
 }
+.border-bottom {
+	display: inline-block;
+	padding-bottom: 0.75rem;
+	background: linear-gradient(90deg, #003da2, #2e84ef, #003da2) no-repeat center bottom;
+	background-size: 100% 8px;
+}
 main section.alt {
-	background: #f0eeeb;
+	background: #f9fafa;
 }
 header .container, main .container {
 	position: relative;
-	max-width: 1120px;
+	max-width: 1020px;
 }
 .check-circle {
 	/*margin-left: 6rem;*/
@@ -89,17 +106,16 @@ header .container, main .container {
 	top: -3px;
 	color: var(--primary);
 }
-.card-header{
+.card-header {
 	margin-bottom: 0 !important;
 	font-size: 1.2rem;
 	font-weight: 900;
 	padding-left: 0;
 }	
-.card-body{
+.card-body {
 	/* padding: 3rem 12rem; */
 	padding: 2rem 0rem;
 }
-
 .color-circle {
 	display: block;
 	background: var(--primary);
@@ -112,14 +128,12 @@ header .container, main .container {
 	font-size: 1.5rem;
 	font-weight: 900;
 }
-
 td.active {
 	background: #fff1d5;
 }
 .table .text-muted {
 	font-size: 0.8em;
 }
-
 .qa .card-header {
 	padding-top: 1rem;
 	background: #fff;
@@ -140,8 +154,8 @@ td.active {
 }
 footer {
 	padding: 2% 0;
-	background: #fff;
-	color: #999;
+	background: linear-gradient(90deg, #003da2, #2e84ef, #003da2);
+	color: #f9fafa;
 	text-align: center;
 }
 footer p {
@@ -150,10 +164,27 @@ footer p {
 footer p:last-child {
 	margin: 0px;
 }
-
 @media (max-width: 768px) {
 	body {
 		font-size: 0.95rem;
+	}
+	h2 {
+		font-size: 2.5rem;
+		font-weight: 900;
+	}
+	h3 {
+		font-family: "Noto Sans Japanese";
+		font-weight: 900;
+		font-size: 2rem;
+		margin: 0;
+	}
+	h4 {
+		font-weight: 900;
+		font-size: 1.75rem;
+	}
+	h5 {
+		font-weight: 900;
+		font-size: 1.25rem;
 	}
 	.card-body {
 		padding: 1.5rem;
@@ -193,6 +224,15 @@ footer p:last-child {
 		font-size: 10px;
 		padding: 0 0.25rem !important;
 	}
+	.feature .media {
+		padding-bottom: 1.25rem;
+		background: linear-gradient(90deg, #003da2, #2e84ef, #003da2) no-repeat center bottom;
+		background-size: 100% 8px;
+	}
+	.feature .border-bottom {
+		background: none;
+		border: none !important;
+	}
 	.qa .card-header {
 		font-size: 1rem;
 	}
@@ -206,10 +246,5 @@ footer p:last-child {
 		padding-top: 7%;
 		padding-bottom: 7%;
 		font-size: 13px;
-	}
-}
-@media (max-width: 575.98px) {
-	h3 {
-		font-size: 1.3rem;
 	}
 }
