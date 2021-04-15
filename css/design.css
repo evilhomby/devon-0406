@@ -152,6 +152,17 @@ td.active {
 .qa p:last-child {
 	margin-bottom: 0;
 }
+.middle-col::after {
+	content: '';
+	display: block;
+	height: 70%;
+	border-left: 1px solid #ccd6dd;
+	border-right: 1px solid #ccd6dd;
+	position: absolute;
+	top: 15%;
+	left: 0px;
+	width: 100%;
+}
 footer {
 	padding: 2% 0;
 	background: linear-gradient(90deg, #003da2, #2e84ef, #003da2);
@@ -241,6 +252,9 @@ footer p:last-child {
 	}
 	.qa p {
 		padding: 0;
+	}
+	.middle-col::after {
+		display: none;
 	}
 	footer {
 		padding-top: 7%;
