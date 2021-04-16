@@ -180,22 +180,25 @@ footer p:last-child {
 		font-size: 0.95rem;
 	}
 	h2 {
-		font-size: 2.5rem;
+		font-size: 2rem;
 		font-weight: 900;
 	}
 	h3 {
-		font-family: "Noto Sans Japanese";
+		/*font-family: "Noto Sans Japanese";*/
 		font-weight: 900;
-		font-size: 2rem;
+		font-size: 1.75rem;
 		margin: 0;
 	}
 	h4 {
 		font-weight: 900;
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 	}
 	h5 {
 		font-weight: 900;
 		font-size: 1.25rem;
+	}
+	#service, #reason {
+		background-size: auto 100%;
 	}
 	.card-body {
 		padding: 1.5rem;
