@@ -128,6 +128,9 @@ header .container, main .container {
 	font-size: 1.5rem;
 	font-weight: 900;
 }
+#chart {
+	background: linear-gradient(180deg, #f5f3ee 40%, #fff 50%);
+}
 td.active {
 	background: #fff1d5;
 }
@@ -197,6 +200,15 @@ footer p:last-child {
 		font-weight: 900;
 		font-size: 1rem;
 	}
+	#philosophy h4 {
+		font-size: 1.25rem;
+	}
+	#philosophy p {
+		line-height: 1.75rem;
+	}
+	#chart {
+		background: linear-gradient(180deg, #f5f3ee 50%, #fff 55%);
+	}
 	#service, #reason {
 		background-size: auto 100%;
 	}
@@ -243,9 +255,13 @@ footer p:last-child {
 		background: linear-gradient(90deg, #003da2, #2e84ef, #003da2) no-repeat center bottom;
 		background-size: 100% 8px;
 	}
+	.feature h5 {
+		margin-bottom: 0;
+	}
 	.feature .border-bottom {
 		background: none;
 		border: none !important;
+		padding-bottom: 0;
 	}
 	.qa .card-header {
 		font-size: 1rem;
